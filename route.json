@@ -1,0 +1,30 @@
+{
+	"public":{
+		"auth": false,
+		"hierarchy": [
+			{
+				"name": "Home",
+				"path": "app/public/home/",
+				"controller": {
+					"login":{
+						"action":{
+							"signup": {
+								"view":{
+									"index": {
+										"auth": false,
+										"frontend_framework": "vue",
+										"components": {},
+										"title":"IMB Frontend Guide"
+										}
+								}
+							}
+						}
+					}
+				}
+			}
+		]
+	},
+	"private": {
+
+	}	
+}

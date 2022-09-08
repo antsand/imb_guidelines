@@ -1,0 +1,14 @@
+<div class="reveal  deck3" style="height:650px;">
+	<div class="slides">
+				<section>
+					<ul>
+						<li class="fragmnet">Organize folders based on user stories</li>
+						<li class="fragmnet">Use design patterns to create routes (HVC)</li>
+					</ul>
+				</section>
+				<section>
+					E.g - If you have a user story that requires the whole world to view it, that user story must reside under an hierarchy folder of 'Public'
+					
+				</section>
+	</div>
+</div>

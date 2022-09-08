@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/dist/reset.css">
+		<link rel="stylesheet" href="/dist/reveal.css">
+		<link rel="stylesheet" href="/dist/theme/simple.css">
+	</head>
+	{% include '../../common/template/head.nj' %}
+	{% include '../../common/template/header.html' %}
+	 <div class="spacer"></div>
+	<div class="wrapper">
+		<p> This page is located at <code> app/public/home/index.nj </code></p>
+	</div>
+	{% include './deck1.nj' %}
+	<div class="wrappers sections display-flex  flex-reverse align-center bg-yellow color-white">
+		<div style="width:50%;color: white;padding: 0px 15px;text-align: center;"> 
+			<h2>	Defining User Stories</h2>
+		</div>	
+		{% include './deck2.nj' %}
+	</div>
+	<div class="wrappers sections display-flex  flex-reverses align-center bg-blue color-white" style="min-height:50vh;">
+		{% include './deck3.nj' %}
+		<div style="width:50%;color: white;padding: 0px 15px;text-align: center;"> 
+			<h2>Organizing Code</h2>
+		</div>
+	</div>
+	<div class="wrappers sections display-flex  flex-reverse align-center bg-yellow color-white" style="min-height:50vh;">
+		{% include './deck4.nj' %}
+		<div style="width:50%;color: white;padding: 0px 15px;text-align: center;"> 
+			<h2>Organizing frontend</h2>
+		</div>
+	</div>
+	<div class="wrappers sections display-flex  flex-reverses align-center bg-blue color-white" style="min-height:50vh;">
+		{% include './deck5.nj' %}
+		<div style="width:50%;color: white;padding: 0px 15px;text-align: center;"> 
+			<h2>Designing API</h2>
+		</div>
+	</div>
+	<div class="wrappers sections display-flex  flex-reverse align-center bg-yellow color-white" style="min-height:50vh;">
+		{% include './deck6.nj' %}
+		<div style="width:50%;color: white;padding: 0px 15px;text-align: center;"> 
+			<h2>Adding Data tracking </h2>
+		</div>
+	</div>
+	{% include '../../common/template/footer.html' %}
+	<script src="/dist/reveal.js"></script>
+	<script src="/plugin/notes/notes.js"></script>
+	<script src="/plugin/markdown/markdown.js"></script>
+	<script src="/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+/*		Reveal.initialize({
+			hash: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		});
+*/		 
+		let deck1 = new Reveal( document.querySelector( '.deck1' ), {
+		    embedded: true,
+		    keyboardCondition: 'focused' // only react to keys when focused
+		  } );
+		  deck1.initialize();
+		let deck2 = new Reveal( document.querySelector( '.deck2' ), {
+		    embedded: true,
+		    keyboardCondition: 'focused' // only react to keys when focused
+		  } );
+		  deck2.initialize();
+		let deck3 = new Reveal( document.querySelector( '.deck3' ), {
+		    embedded: true,
+		    keyboardCondition: 'focused' // only react to keys when focused
+		  } );
+		  deck3.initialize();
+	</script>
+</html>
+

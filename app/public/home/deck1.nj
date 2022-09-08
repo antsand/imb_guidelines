@@ -1,0 +1,99 @@
+<div class="reveal  deck1 bc" style="height:650px;">
+			<div class="slides">
+				<section>Application development with <b>User Stories</b> in mind 
+				</section>
+				<section>Who is this guide for?
+				</section>
+				<section>
+						Everyone involved in creating an application
+					<ul>
+						<li class="fragment">Product Owners </li>
+						<li class="fragment">Scrum Master</li>
+						<li class="fragment">Devops</li>
+						<li class="fragment">Full Stack developers</li>
+					</ul>	
+				</section>
+				<section>
+					Why this guide and what is the current problem?
+				</section>
+				<section>
+					To diagnose the current issues, let us focus on the fronend of the application
+				</section>
+				<section>
+					<div style="display: flex; height:500px;justify-content: space-between;align-items: center;">
+						<img src="/images/SVG/Full_stack.svg">
+						<div>A Monolith contains all the components under a single system. One team works on the whole system.</div>
+					</div>
+				</section>
+				<section>
+					<div style="display: flex; height:500px;justify-content: space-between;align-items: center;">
+						<img src="/images/SVG/micro_front_backend.svg">
+						<div style="padding:20px;">Microservices modularize different components of a system. Multiple teams can work on the system.</div>
+					</div>
+
+				</section>
+				<section>
+					<div style="display: flex; height:500px;justify-content: space-between;align-items: center;">
+						<img src="/images/SVG/monolith_frontend.svg">
+						<div style="padding:20px;">Though the system can be micro-serivce the frontend in most cases is monolithic. </div>
+					</div>
+				</section>
+				<section>
+					<div style="display: flex; height:500px;justify-content: space-between;align-items: center;">
+						<img src="/images/SVG/reality.svg">
+						<div style="padding:20px;">
+							Approximately 80% of our code base is frontend code <br>
+						</div>
+					</div>
+				</section>
+				<section>
+					<span style="color:red">80%</span> of our micro-service architecture only focuses on<span style="color:red;"> 20%</span> of our code base
+				</section>
+				<section>
+					<div style="display: flex; height:500px;justify-content: space-between;align-items: center;">
+						<img src="/images/SVG/transformation.svg">
+					</div>
+				</section>
+				<section>
+					An advanced microservice frontend would require each user story to have it's own container
+				</section>
+				<section>
+					How do we know when to use basic vs advanced micro-frontend?
+				</section>
+				<section>
+					<ul>
+						<li class="">How different are the users for each user stories?</li>
+						<li class="fragment">Should different teams work on each user story?</li>
+						<li class="fragment">What is the expected traffic for the application?</li>
+						<li class="fragment">How much bandwidth (e.g. data) does each user story require?</li>
+						<li class="fragment">How complex is each user story, in terms of code complexity?</li>
+						<li class="fragment">How tightly coupled are each user story</li>
+					</ul>
+				</section>
+				<section>
+					<div style="display: flex; height:500px;justify-content: space-between;align-items: center;">
+						<img src="/images/SVG/Container_frontend.svg">
+					</div>
+				</section>
+				<section>
+					<h2> How do we implement this? </h2>
+					<ul>
+						<li class="fragment">As you browse through the IMB application guideline, the implemenration details will become clearer. </li>
+						
+					</ul>		
+				</section>
+				<section>
+						This document will answer questions like:
+						<li class="fragment">How do we implement design based on user stotries?</li>
+						<li class="fragment">How do we map user stories to micro-services?</li>
+						<li class="fragment">What are  user stories and how do we know if we are doing it right?</li>
+				</section>
+				<section>
+					The IMB application guideline is all about implementing best practices for long term maintainability, site reliability, code redability and most importantly serving our users 
+					efficiently. 
+				</section>
+				<section>
+					This deck is located at <code>app/public/home/deck1.nj</code>
+				</section>
+			</div>
+		</div>
